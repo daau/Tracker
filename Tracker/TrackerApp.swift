@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 @main
 struct TrackerApp: App {
@@ -15,6 +16,21 @@ struct TrackerApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .onOpenURL { url in
+                    GIDSignIn.sharedInstance.handle(url)
+                }
+                .onAppear {
+                    GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                        if (user != nil) {
+                            print("User exists")
+                        } else {
+                            if let validError = error {
+                                print(validError)
+                                print(validError.localizedDescription)
+                            }
+                        }
+                    }
+                }
         }
     }
 }

@@ -13,6 +13,13 @@
 		C56D5B21299EACD3002D10EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56D5B20299EACD3002D10EE /* Preview Assets.xcassets */; };
 		C56D5B23299EACD3002D10EE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D5B22299EACD3002D10EE /* Persistence.swift */; };
 		C56D5B26299EACD3002D10EE /* Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C56D5B24299EACD3002D10EE /* Tracker.xcdatamodeld */; };
+		C5DC2E38299EE9A90086DD55 /* TimerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */; };
+		C5DC2E3A299EEAF60086DD55 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */; };
+		C5DC2E3C29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5DC2E3B29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist */; };
+		C5DC2E3F29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar in Frameworks */ = {isa = PBXBuildFile; productRef = C5DC2E3E29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar */; };
+		C5DC2E4229A0296B0086DD55 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C5DC2E4129A0296B0086DD55 /* GoogleSignIn */; };
+		C5DC2E4429A0296B0086DD55 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5DC2E4329A0296B0086DD55 /* GoogleSignInSwift */; };
+		C5E2A96D29A04287007E4D3B /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2A96C29A04287007E4D3B /* Google.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,11 @@
 		C56D5B20299EACD3002D10EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C56D5B22299EACD3002D10EE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C56D5B25299EACD3002D10EE /* Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tracker.xcdatamodel; sourceTree = "<group>"; };
+		C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRowView.swift; sourceTree = "<group>"; };
+		C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		C5DC2E3B29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		C5DC2E4529A039450086DD55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C5E2A96C29A04287007E4D3B /* Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DC2E4429A0296B0086DD55 /* GoogleSignInSwift in Frameworks */,
+				C5DC2E3F29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar in Frameworks */,
+				C5DC2E4229A0296B0086DD55 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +70,14 @@
 		C56D5B18299EACD1002D10EE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				C5DC2E4529A039450086DD55 /* Info.plist */,
+				C5E2A96B29A0427A007E4D3B /* Model */,
 				C56D5B19299EACD1002D10EE /* TrackerApp.swift */,
-				C56D5B1B299EACD1002D10EE /* ContentView.swift */,
+				C5DC2E35299EE9360086DD55 /* View */,
 				C56D5B1D299EACD3002D10EE /* Assets.xcassets */,
 				C56D5B22299EACD3002D10EE /* Persistence.swift */,
 				C56D5B24299EACD3002D10EE /* Tracker.xcdatamodeld */,
+				C5DC2E3B29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist */,
 				C56D5B1F299EACD3002D10EE /* Preview Content */,
 			);
 			path = Tracker;
@@ -71,6 +89,24 @@
 				C56D5B20299EACD3002D10EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5DC2E35299EE9360086DD55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C56D5B1B299EACD1002D10EE /* ContentView.swift */,
+				C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */,
+				C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5E2A96B29A0427A007E4D3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5E2A96C29A04287007E4D3B /* Google.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +125,11 @@
 			dependencies = (
 			);
 			name = Tracker;
+			packageProductDependencies = (
+				C5DC2E3E29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar */,
+				C5DC2E4129A0296B0086DD55 /* GoogleSignIn */,
+				C5DC2E4329A0296B0086DD55 /* GoogleSignInSwift */,
+			);
 			productName = Tracker;
 			productReference = C56D5B16299EACD1002D10EE /* Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +158,10 @@
 				Base,
 			);
 			mainGroup = C56D5B0D299EACD1002D10EE;
+			packageReferences = (
+				C5DC2E3D29A0197F0086DD55 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
+				C5DC2E4029A0296B0086DD55 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = C56D5B17299EACD1002D10EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +178,7 @@
 			files = (
 				C56D5B21299EACD3002D10EE /* Preview Assets.xcassets in Resources */,
 				C56D5B1E299EACD3002D10EE /* Assets.xcassets in Resources */,
+				C5DC2E3C29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DC2E38299EE9A90086DD55 /* TimerRowView.swift in Sources */,
 				C56D5B26299EACD3002D10EE /* Tracker.xcdatamodeld in Sources */,
 				C56D5B23299EACD3002D10EE /* Persistence.swift in Sources */,
 				C56D5B1C299EACD1002D10EE /* ContentView.swift in Sources */,
 				C56D5B1A299EACD1002D10EE /* TrackerApp.swift in Sources */,
+				C5E2A96D29A04287007E4D3B /* Google.swift in Sources */,
+				C5DC2E3A299EEAF60086DD55 /* CircleProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +326,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Tracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Tracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -305,7 +354,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Tracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Tracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -345,6 +394,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5DC2E3D29A0197F0086DD55 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C5DC2E4029A0296B0086DD55 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5DC2E3E29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5DC2E3D29A0197F0086DD55 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Calendar;
+		};
+		C5DC2E4129A0296B0086DD55 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5DC2E4029A0296B0086DD55 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		C5DC2E4329A0296B0086DD55 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5DC2E4029A0296B0086DD55 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C56D5B24299EACD3002D10EE /* Tracker.xcdatamodeld */ = {
