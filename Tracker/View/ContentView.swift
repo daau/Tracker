@@ -20,45 +20,28 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-//        NavigationView {
-//            List {
-//                ForEach(items) { item in
-//                    NavigationLink {
-//                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-//                    } label: {
-//                        Text(item.timestamp!, formatter: itemFormatter)
-//                    }
-//                }
-//                .onDelete(perform: deleteItems)
-//            }
-//            .toolbar {
-//                ToolbarItem {
-//                    Button(action: addItem) {
-//                        Label("Add Item", systemImage: "plus")
-//                    }
-//                }
-//            }
-//            Text("Select an item")
-//        }
-        GoogleSignInButton(action: handleSignInButton)
+        NavigationView {
+            List {
+                ForEach(items) { item in
+                    NavigationLink {
+                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                    } label: {
+                        Text(item.timestamp!, formatter: itemFormatter)
+                    }
+                }
+                .onDelete(perform: deleteItems)
+            }
+            .toolbar {
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Add Item", systemImage: "plus")
+                    }
+                }
+            }
+            Text("Select an item")
+        }
     }
     
-    func handleSignInButton() {
-        guard let rootViewController = UIApplication.shared.windows.first?.rootViewController else {
-          print("There is no root view controller!")
-          return
-        }
-        
-      GIDSignIn.sharedInstance.signIn(
-        withPresenting: rootViewController) { signInResult, error in
-          guard let result = signInResult else {
-              print(error?.localizedDescription ?? "An error occured during signin")
-            return
-          }
-          // If sign in succeeded, display the app's main content View.
-            print(result)
-        }
-    }
 
     private func addItem() {
         withAnimation {

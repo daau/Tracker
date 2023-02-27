@@ -13,13 +13,16 @@
 		C56D5B21299EACD3002D10EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56D5B20299EACD3002D10EE /* Preview Assets.xcassets */; };
 		C56D5B23299EACD3002D10EE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D5B22299EACD3002D10EE /* Persistence.swift */; };
 		C56D5B26299EACD3002D10EE /* Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C56D5B24299EACD3002D10EE /* Tracker.xcdatamodeld */; };
+		C575578F29A9B20E002D7F3B /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575578E29A9B20E002D7F3B /* EventFetcher.swift */; };
+		C575579129AAE17D002D7F3B /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575579029AAE17D002D7F3B /* TodoListView.swift */; };
+		C575579329AAE1F1002D7F3B /* EKReminder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575579229AAE1F1002D7F3B /* EKReminder+Extensions.swift */; };
+		C5A715CD29ABED4B007D9533 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = C5A715CC29ABED4B007D9533 /* Fakery */; };
 		C5DC2E38299EE9A90086DD55 /* TimerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */; };
 		C5DC2E3A299EEAF60086DD55 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */; };
 		C5DC2E3C29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5DC2E3B29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist */; };
 		C5DC2E3F29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar in Frameworks */ = {isa = PBXBuildFile; productRef = C5DC2E3E29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar */; };
 		C5DC2E4229A0296B0086DD55 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C5DC2E4129A0296B0086DD55 /* GoogleSignIn */; };
 		C5DC2E4429A0296B0086DD55 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5DC2E4329A0296B0086DD55 /* GoogleSignInSwift */; };
-		C5E2A96D29A04287007E4D3B /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2A96C29A04287007E4D3B /* Google.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +33,13 @@
 		C56D5B20299EACD3002D10EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C56D5B22299EACD3002D10EE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C56D5B25299EACD3002D10EE /* Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tracker.xcdatamodel; sourceTree = "<group>"; };
+		C575578E29A9B20E002D7F3B /* EventFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFetcher.swift; sourceTree = "<group>"; };
+		C575579029AAE17D002D7F3B /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		C575579229AAE1F1002D7F3B /* EKReminder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKReminder+Extensions.swift"; sourceTree = "<group>"; };
 		C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRowView.swift; sourceTree = "<group>"; };
 		C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		C5DC2E3B29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		C5DC2E4529A039450086DD55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		C5E2A96C29A04287007E4D3B /* Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A715CD29ABED4B007D9533 /* Fakery in Frameworks */,
 				C5DC2E4429A0296B0086DD55 /* GoogleSignInSwift in Frameworks */,
 				C5DC2E3F29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar in Frameworks */,
 				C5DC2E4229A0296B0086DD55 /* GoogleSignIn in Frameworks */,
@@ -97,6 +103,7 @@
 				C56D5B1B299EACD1002D10EE /* ContentView.swift */,
 				C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */,
 				C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */,
+				C575579029AAE17D002D7F3B /* TodoListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,7 +111,8 @@
 		C5E2A96B29A0427A007E4D3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C5E2A96C29A04287007E4D3B /* Google.swift */,
+				C575578E29A9B20E002D7F3B /* EventFetcher.swift */,
+				C575579229AAE1F1002D7F3B /* EKReminder+Extensions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 				C5DC2E3E29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar */,
 				C5DC2E4129A0296B0086DD55 /* GoogleSignIn */,
 				C5DC2E4329A0296B0086DD55 /* GoogleSignInSwift */,
+				C5A715CC29ABED4B007D9533 /* Fakery */,
 			);
 			productName = Tracker;
 			productReference = C56D5B16299EACD1002D10EE /* Tracker.app */;
@@ -161,6 +170,7 @@
 			packageReferences = (
 				C5DC2E3D29A0197F0086DD55 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
 				C5DC2E4029A0296B0086DD55 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				C5A715CB29ABED4B007D9533 /* XCRemoteSwiftPackageReference "Fakery" */,
 			);
 			productRefGroup = C56D5B17299EACD1002D10EE /* Products */;
 			projectDirPath = "";
@@ -189,12 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C575578F29A9B20E002D7F3B /* EventFetcher.swift in Sources */,
 				C5DC2E38299EE9A90086DD55 /* TimerRowView.swift in Sources */,
+				C575579129AAE17D002D7F3B /* TodoListView.swift in Sources */,
 				C56D5B26299EACD3002D10EE /* Tracker.xcdatamodeld in Sources */,
 				C56D5B23299EACD3002D10EE /* Persistence.swift in Sources */,
 				C56D5B1C299EACD1002D10EE /* ContentView.swift in Sources */,
 				C56D5B1A299EACD1002D10EE /* TrackerApp.swift in Sources */,
-				C5E2A96D29A04287007E4D3B /* Google.swift in Sources */,
+				C575579329AAE1F1002D7F3B /* EKReminder+Extensions.swift in Sources */,
 				C5DC2E3A299EEAF60086DD55 /* CircleProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +339,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tracker/Info.plist;
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Need to access reminders";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -355,6 +368,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tracker/Info.plist;
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Need to access reminders";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -396,6 +410,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C5A715CB29ABED4B007D9533 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		C5DC2E3D29A0197F0086DD55 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
@@ -415,6 +437,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C5A715CC29ABED4B007D9533 /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5A715CB29ABED4B007D9533 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
 		C5DC2E3E29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C5DC2E3D29A0197F0086DD55 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
