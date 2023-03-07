@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C53F82E729B1AF990075622A /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53F82E629B1AF990075622A /* CategoryView.swift */; };
+		C56C53ED29AE5F4C002BBBB8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56C53EC29AE5F4C002BBBB8 /* ViewModel.swift */; };
 		C56D5B1A299EACD1002D10EE /* TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D5B19299EACD1002D10EE /* TrackerApp.swift */; };
 		C56D5B1C299EACD1002D10EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D5B1B299EACD1002D10EE /* ContentView.swift */; };
 		C56D5B1E299EACD3002D10EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56D5B1D299EACD3002D10EE /* Assets.xcassets */; };
 		C56D5B21299EACD3002D10EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56D5B20299EACD3002D10EE /* Preview Assets.xcassets */; };
 		C56D5B23299EACD3002D10EE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56D5B22299EACD3002D10EE /* Persistence.swift */; };
 		C56D5B26299EACD3002D10EE /* Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C56D5B24299EACD3002D10EE /* Tracker.xcdatamodeld */; };
-		C575578F29A9B20E002D7F3B /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575578E29A9B20E002D7F3B /* EventFetcher.swift */; };
+		C575578F29A9B20E002D7F3B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575578E29A9B20E002D7F3B /* Store.swift */; };
 		C575579129AAE17D002D7F3B /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575579029AAE17D002D7F3B /* TodoListView.swift */; };
 		C575579329AAE1F1002D7F3B /* EKReminder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575579229AAE1F1002D7F3B /* EKReminder+Extensions.swift */; };
 		C5A715CD29ABED4B007D9533 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = C5A715CC29ABED4B007D9533 /* Fakery */; };
-		C5DC2E38299EE9A90086DD55 /* TimerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */; };
+		C5A715D129AC7A18007D9533 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A715D029AC7A18007D9533 /* TodoCell.swift */; };
 		C5DC2E3A299EEAF60086DD55 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */; };
 		C5DC2E3C29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5DC2E3B29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist */; };
 		C5DC2E3F29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar in Frameworks */ = {isa = PBXBuildFile; productRef = C5DC2E3E29A0197F0086DD55 /* GoogleAPIClientForREST_Calendar */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C53F82E629B1AF990075622A /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		C56C53EC29AE5F4C002BBBB8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C56D5B16299EACD1002D10EE /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56D5B19299EACD1002D10EE /* TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerApp.swift; sourceTree = "<group>"; };
 		C56D5B1B299EACD1002D10EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,10 +37,10 @@
 		C56D5B20299EACD3002D10EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C56D5B22299EACD3002D10EE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C56D5B25299EACD3002D10EE /* Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tracker.xcdatamodel; sourceTree = "<group>"; };
-		C575578E29A9B20E002D7F3B /* EventFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFetcher.swift; sourceTree = "<group>"; };
+		C575578E29A9B20E002D7F3B /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		C575579029AAE17D002D7F3B /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		C575579229AAE1F1002D7F3B /* EKReminder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKReminder+Extensions.swift"; sourceTree = "<group>"; };
-		C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRowView.swift; sourceTree = "<group>"; };
+		C5A715D029AC7A18007D9533 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		C5DC2E3B29A006A70086DD55 /* client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_372766328616-mjshhrrim80d76e58l7eej21f6987rk0.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		C5DC2E4529A039450086DD55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C56C53EB29AE5F38002BBBB8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C56C53EC29AE5F4C002BBBB8 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C56D5B0D299EACD1002D10EE = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,7 @@
 				C5DC2E4529A039450086DD55 /* Info.plist */,
 				C5E2A96B29A0427A007E4D3B /* Model */,
 				C56D5B19299EACD1002D10EE /* TrackerApp.swift */,
+				C56C53EB29AE5F38002BBBB8 /* ViewModel */,
 				C5DC2E35299EE9360086DD55 /* View */,
 				C56D5B1D299EACD3002D10EE /* Assets.xcassets */,
 				C56D5B22299EACD3002D10EE /* Persistence.swift */,
@@ -101,9 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				C56D5B1B299EACD1002D10EE /* ContentView.swift */,
-				C5DC2E37299EE9A90086DD55 /* TimerRowView.swift */,
 				C5DC2E39299EEAF60086DD55 /* CircleProgressView.swift */,
 				C575579029AAE17D002D7F3B /* TodoListView.swift */,
+				C5A715D029AC7A18007D9533 /* TodoCell.swift */,
+				C53F82E629B1AF990075622A /* CategoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,7 +125,7 @@
 		C5E2A96B29A0427A007E4D3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C575578E29A9B20E002D7F3B /* EventFetcher.swift */,
+				C575578E29A9B20E002D7F3B /* Store.swift */,
 				C575579229AAE1F1002D7F3B /* EKReminder+Extensions.swift */,
 			);
 			path = Model;
@@ -199,9 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C575578F29A9B20E002D7F3B /* EventFetcher.swift in Sources */,
-				C5DC2E38299EE9A90086DD55 /* TimerRowView.swift in Sources */,
+				C575578F29A9B20E002D7F3B /* Store.swift in Sources */,
+				C53F82E729B1AF990075622A /* CategoryView.swift in Sources */,
 				C575579129AAE17D002D7F3B /* TodoListView.swift in Sources */,
+				C56C53ED29AE5F4C002BBBB8 /* ViewModel.swift in Sources */,
+				C5A715D129AC7A18007D9533 /* TodoCell.swift in Sources */,
 				C56D5B26299EACD3002D10EE /* Tracker.xcdatamodeld in Sources */,
 				C56D5B23299EACD3002D10EE /* Persistence.swift in Sources */,
 				C56D5B1C299EACD1002D10EE /* ContentView.swift in Sources */,

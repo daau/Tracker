@@ -11,14 +11,12 @@ import GoogleSignIn
 @main
 struct TrackerApp: App {
     let persistenceController = PersistenceController.shared
-    @StateObject var eventFetcher = EventFetcher.shared
+    @StateObject var eventFetcher = Store.shared
 
     var body: some Scene {
         WindowGroup {
-            TodoListView()
+            CategoryView()
                 .environmentObject(eventFetcher)
-//            ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
 
         }
     }
